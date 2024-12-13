@@ -27,13 +27,13 @@ def logout():
 login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
-start_page = st.Page("start_page.py", title="Home", icon=":material/home:", default=True)
-about_page = st.Page("about_page.py", title="About", icon=":material/info:")
-drivers_page = st.Page("drivers_page.py", title="Fahrer und Teams")
-gp_page = st.Page("gp_page.py", title="Übersicht")
-track_page = st.Page("track_page.py", title="Rundenlänge")
-speed_page = st.Page("speed_page.py", title="Geschwindigkeitsvergleich")
-besch_page = st.Page("turns_page.py", title="Visualisierung Zentripetalbeschleunigung")
+start_page = st.Page("Projekt\start_page.py", title="Home", icon=":material/home:", default=True)
+about_page = st.Page("Projekt\\about_page.py", title="About", icon=":material/info:")
+drivers_page = st.Page("Projekt\drivers_page.py", title="Fahrer und Teams")
+gp_page = st.Page("Projekt\gp_page.py", title="Übersicht")
+track_page = st.Page("Projekt\\track_page.py", title="Rundenlänge")
+speed_page = st.Page("Projekt\speed_page.py", title="Geschwindigkeitsvergleich")
+besch_page = st.Page("Projekt\\turns_page.py", title="Visualisierung Zentripetalbeschleunigung")
 
 #Loginlogik
 if st.session_state.logged_in:
