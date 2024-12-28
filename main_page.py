@@ -29,22 +29,22 @@ login_page = st.Page(login, title="Log in", icon=":material/login:")
 logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
 ## Home
-start_page = st.Page("start_page.py", title="Home", icon=":material/home:", default=True)
-about_page = st.Page("about_page.py", title="About", icon=":material/info:")
-projektarbeit_page = st.Page("projektarbeit_page.py", title="Projektarbeit")
+start_page = st.Page("Projekt\start_page.py", title="Home", icon=":material/home:", default=True)
+about_page = st.Page("Projekt\\about_page.py", title="About", icon=":material/info:")
+projektarbeit_page = st.Page("Projekt\\projektarbeit_page.py", title="Projektarbeit")
 
 ## Die Formel 1
-formel1_page = st.Page("formel1_page.py", title="Die Formel 1 - Die Königsklasse des Motorsports")
-drivers_page = st.Page("drivers_page.py", title="Fahrer und Teams")
+formel1_page = st.Page("Projekt\\formel1_page.py", title="Die Formel 1 - Die Königsklasse des Motorsports")
+drivers_page = st.Page("Projekt\\drivers_page.py", title="Fahrer und Teams")
 
 ## Analyse Q3 Silverstone 2024
-gp_page = st.Page("gp_page.py", title="Übersicht")
-track_page = st.Page("track_page.py", title="Rundenlänge")
-speed_page = st.Page("speed_page.py", title="Geschwindigkeitsvergleich")
-krümmungsradius_page = st.Page("turns_page.py", title="Krümmungsradius")
-az_fz_page = st.Page("a_z__f_z_page.py", title="Zentripetalbeschleunigung und -kraft")
-haftreibung_page = st.Page("haftreibungskoeffizient_page.py", title="Haftreibungskoeffizient")
-faero_page = st.Page("F_aero_page.py", title="Aerodynamische Kraft")
+gp_page = st.Page("Projekt\\gp_page.py", title="Übersicht")
+track_page = st.Page("Projekt\\track_page.py", title="Rundenlänge")
+speed_page = st.Page("Projekt\\speed_page.py", title="Geschwindigkeitsvergleich")
+krümmungsradius_page = st.Page("Projekt\\turns_page.py", title="Krümmungsradius")
+az_fz_page = st.Page("Projekt\\a_z__f_z_page.py", title="Zentripetalbeschleunigung und -kraft")
+haftreibung_page = st.Page("Projekt\\haftreibungskoeffizient_page.py", title="Haftreibungskoeffizient")
+faero_page = st.Page("Projekt\\F_aero_page.py", title="Aerodynamische Kraft")
 
 
 #Loginlogik
