@@ -163,8 +163,7 @@ class Driver:
     def __init__(self, name, fullname):
         self.name = name
         self.fullname = fullname
-        base_path = os.path.dirname(__file__)
-        path = os.path.join(base_path, f"Projekt\P_data\{name}_data.csv")
+        path = f"Projekt\P_data\{name}_data.csv"
         df = pd.read_csv(path, sep=";")
         self.x = df["X [m]"].values
         self.y = df["Y [m]"].values
