@@ -3,6 +3,7 @@ import plotly.express as px
 import numpy as np
 import pandas as pd
 from scipy import interpolate
+import os
 from scipy.interpolate import splrep, splev, spalde, UnivariateSpline
 
 # Masse des Formel-1-Fahrzeugs mit Fahrer
@@ -162,7 +163,8 @@ class Driver:
     def __init__(self, name, fullname):
         self.name = name
         self.fullname = fullname
-        path = f"Projekt\P_data\{name}_data.csv"
+        base_path = os.path.dirname(__file__)
+        path = os.path.join(base_path, f"Projekt\P_data\{name}_data.csv")
         df = pd.read_csv(path, sep=";")
         self.x = df["X [m]"].values
         self.y = df["Y [m]"].values
