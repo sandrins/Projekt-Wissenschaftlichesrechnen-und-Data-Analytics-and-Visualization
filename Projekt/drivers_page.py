@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 
 #st.set_page_config(layout="wide")
 
@@ -14,8 +15,8 @@ Die Pokale und die Medaillen neben den Teamnamen, zeigen die Platzierung in der 
 Medaillen neben den Fahrernamen, zeigen die Platzierung in der Fahrer-Weltmeisterschaft 2024 an. Der Pokal (🏆) steht für den ersten Platz, 
 die Medaillen (🥈🥉) für den zweiten und dritten Platz in der jeweiligen Wertung.
 '''
-
-df = pd.read_csv("Projekt\P_data\Driver_Data.csv", sep=",")
+file_path = os.path.join(os.getcwd(), "Projekt/P_data", "Driver_Data.csv")
+df = pd.read_csv(file_path, sep=",") #"Data/Driver_Data.csv"
 
 def dropDown(n):
     driver_data = df[n]
@@ -34,11 +35,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\lannor01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/lannor01.png", width=200)
                 with st.expander("Lando Norris 🥈"):
                     dropDown("Lando Norris")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\oscpia01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/oscpia01.png", width=200)
                 with st.expander("Oscar Piastri"):
                     dropDown("Oscar Piastri")
         
@@ -47,11 +48,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\maxver01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/maxver01.png", width=200)
                 with st.expander("Max Verstappen 🏆"):
                     dropDown("Max Verstappen")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\serper01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/serper01.png", width=200)
                 with st.expander("Sergio Pérez"):
                     dropDown("Sergio Perez")
         
@@ -60,11 +61,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\\feralo01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/feralo01.png", width=200)
                 with st.expander("Fernando Alonso"):
                     dropDown("Fernando Alonso")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\lanstr01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/lanstr01.png", width=200)
                 with st.expander("Lance Stroll"):
                     dropDown("Lance Stroll")
 
@@ -73,11 +74,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\kevmag01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/kevmag01.png", width=200)
                 with st.expander("Kevin Magnussen"):
                     dropDown("Kevin Magnussen")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\\nichul01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/nichul01.png", width=200)
                 with st.expander("Nico Hülkenberg"):
                     dropDown("Nico Hülkenberg")
         
@@ -86,11 +87,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\\alealb01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/alealb01.png", width=200)
                 with st.expander("Alexander Albon"):
                     dropDown("Alexander Albon")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\logsar01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/logsar01.png", width=200)
                 with st.expander("Logan Sargeant"):
                     dropDown("Logan Sargeant")
         
@@ -100,11 +101,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\chalec01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/chalec01.png", width=200)
                 with st.expander("Charles Leclerc 🥉"):
                     dropDown("Charles Leclerc")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\carsai01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/carsai01.png", width=200)
                 with st.expander("Carlos Sainz"):
                     dropDown("Carlos Sainz")
         
@@ -113,11 +114,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\lewham01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/lewham01.png", width=200)
                 with st.expander("Lewis Hamilton"):
                     dropDown("Lewis Hamilton")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\georus01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/georus01.png", width=200)
                 with st.expander("George Russell"):
                     dropDown("George Russell")
         
@@ -126,11 +127,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\estoco01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/estoco01.png", width=200)
                 with st.expander("Esteban Ocon"):
                     dropDown("Esteban Ocon")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\piegas01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/piegas01.png", width=200)
                 with st.expander("Pierre Gasly"):
                     dropDown("Pierre Gasly")
         
@@ -139,11 +140,11 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\danric01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/danric01.png", width=200)
                 with st.expander("Daniel Ricciardo"):
                     dropDown("Daniel Ricciardo")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\yuktsu01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/yuktsu01.png", width=200)
                 with st.expander("Yuki Tsunoda"):
                     dropDown("Yuki Tsunoda")
 
@@ -152,10 +153,10 @@ with st.container():
         colsR = st.columns(2)
         with st.container():
             with colsR[0]:
-                st.image("Projekt\P_data\Driver_Photos\\valbot01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/valbot01.png", width=200)
                 with st.expander("Valtteri Bottas"):
                     dropDown("Valtteri Bottas")
             with colsR[1]:
-                st.image("Projekt\P_data\Driver_Photos\guazho01.png", width=200)
+                st.image("Projekt/P_data/Driver_Photos/guazho01.png", width=200)
                 with st.expander("Zhou Guanyu"):
                     dropDown("Zhou Guanyu")

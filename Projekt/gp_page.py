@@ -49,5 +49,5 @@ with st.container():
     with cols[0]:        
         st.dataframe(df)
     with cols[1]:
-        st.image("Projekt\P_data\Driver_Photos\georus01.png", width=400)
+        st.image("Projekt/P_data/Driver_Photos/georus01.png", width=400)
         st.caption("George Russell")

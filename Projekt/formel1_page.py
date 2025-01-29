@@ -72,7 +72,7 @@ Heimrennen vieler Teams in Silverstone. Den genauen Rennkalender
 finden Sie in der nachfolgenden Tabelle. 
 '''
 
-df = pd.read_csv("Projekt\P_data\Rennkalender_2024.csv", sep=",", index_col=0)
+df = pd.read_csv("Projekt/P_data/Rennkalender_2024.csv", sep=",", index_col=0)
 st.dataframe(df, width=800, height=878)
 st.caption("Rennkalender 2024")
 

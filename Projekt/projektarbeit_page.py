@@ -7,7 +7,7 @@ Auf dieser Seite kann die Projektarbeit aus dem Fach Wissenschaftliches Rechnen 
 '''
 
 zip_file_name = "Projektarbeit_Wissenschaftliches_Rechnen_Andrin_Sutter.zip"
-file_path = "Projekt\Projektarbeit_Wissenschaftliches_Rechnen_Andrin_Sutter.zip"
+file_path = "Projekt/Projektarbeit_Wissenschaftliches_Rechnen_Andrin_Sutter.zip"
 
 st.subheader("Download Projektarbeit")
 
