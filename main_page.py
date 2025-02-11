@@ -11,12 +11,16 @@ def login():
     username = st.text_input("Benutzername")
     password = st.text_input("Passwort", type="password")
     if st.button("Log in"):
-        if username=='test' and password=='test':  # Überprüfung, ob etwas eingetragen wurde
-            st.session_state.logged_in = True
-            st.success("Erfolgreich eingeloggt!")
-            st.rerun()  # Seite neu laden, um den Zustand zu aktualisieren
-        else:
-            st.error("Bitte Benutzername und Passwort eingeben")
+        #if username !=None and password != None:  # Überprüfung, ob etwas eingetragen wurde
+        #    st.session_state.logged_in = True
+        #    st.success("Erfolgreich eingeloggt!")
+        #    st.rerun()  # Seite neu laden, um den Zustand zu aktualisieren
+        #else:
+        #    st.error("Bitte Benutzername und Passwort eingeben")
+
+        st.session_state.logged_in = True
+        st.success("Erfolgreich eingeloggt!")
+        st.rerun()
 
 
 def logout():
