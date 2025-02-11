@@ -40,6 +40,7 @@ projektarbeit_page = st.Page("Projekt/projektarbeit_page.py", title="Projektarbe
 
 ## Die Formel 1
 formel1_page = st.Page("Projekt/formel1_page.py", title="Die Formel 1 - Die Königsklasse des Motorsports")
+car_page = st.Page("Projekt/formel1_car.py", title="Formel 1 Auto")
 drivers_page = st.Page("Projekt/drivers_page.py", title="Fahrer und Teams")
 
 ## Analyse Q3 Silverstone 2024
@@ -57,7 +58,7 @@ if st.session_state.logged_in:
     pg = st.navigation(
         {
             "Home": [start_page, logout_page, about_page, projektarbeit_page],
-            "Die Formel 1": [formel1_page, drivers_page],
+            "Die Formel 1": [formel1_page, drivers_page. car_page],
             "Analyse Q3 Silverstone 2024": [gp_page,
                                             track_page,
                                             speed_page,
