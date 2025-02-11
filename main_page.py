@@ -10,6 +10,7 @@ def login():
     st.title("Login Seite")
     username = st.text_input("Benutzername")
     password = st.text_input("Passwort", type="password")
+    st.text("Es gibt keine Überprüfung der Eingaben. Einfach auf 'Log in' klicken.")
     if st.button("Log in"):
         #if username !=None and password != None:  # Überprüfung, ob etwas eingetragen wurde
         #    st.session_state.logged_in = True
