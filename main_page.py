@@ -58,7 +58,7 @@ if st.session_state.logged_in:
     pg = st.navigation(
         {
             "Home": [start_page, logout_page, about_page, projektarbeit_page],
-            "Die Formel 1": [formel1_page, drivers_page. car_page],
+            "Die Formel 1": [formel1_page, drivers_page, car_page],
             "Analyse Q3 Silverstone 2024": [gp_page,
                                             track_page,
                                             speed_page,
