@@ -59,5 +59,5 @@ Elektromotor sorgt für eine beeindruckende Balance aus Leistung und Effizienz.
 
 Im Bild unten ist ein Antriebsstrangs von Mercedes zu sehen.
 '''
-st.image("Projekt/P_data/GP_Photos/Mercedes_Antrieb.jpeg", width=600)
+st.image("Projekt/P_data/GP_Photos/Mercedes_Antrieb.jpg", width=600)
 st.caption("Antriebsstrang von Mercedes")
